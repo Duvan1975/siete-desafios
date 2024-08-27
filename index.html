@@ -14,12 +14,23 @@
     <header>
         <h1>¡Hola Mundo!</h1>
     </header>
-    <main>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Digite su nombre">
-        <button id="capturar">Guardar</button>
+    <main class="formulario">
+        <section>
+            <label for="nombre_id">Nombre:</label><br>
+            <input type="text" id="nombre_id" class="nombre" name="nombre" placeholder="Digite su nombre"><br><br>
+            <label for="edad_id">Edad:</label><br>
+            <input type="text" id="edad_id" class="edad" name="edad" placeholder="Digite su edad"><br><br>
+            <label for="lenguaje_id">lenguaje:</label><br>
+            <input type="text" id="lenguaje_id" class="lenguaje" name="lenguaje" placeholder="Ingrese el tipo de lenguaje"><br><br>
 
-        <p id="resultado"></p>
+            <button class="btn-capturar">Guardar</button>
+        </section>
+        <section class="mensaje">
+            <textarea class="resultado" rows="6" cols="50" readonly>
+                Ingresando datos aquí...
+            </textarea>
+        </section>
+
     </main>
     <footer>
 
